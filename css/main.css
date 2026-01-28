@@ -1,0 +1,40 @@
+/*Global css*/
+* {
+}
+
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+
+/* HEADER */
+
+.navigation-bar {
+  margin: 0;
+  background-color: #1d1326;
+}
+.navigation-bar a {
+  color: #f2e3ce;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 1rem;
+  display: inline-flex;
+}
+
+.navigation-bar a:hover {
+  background-color: #000000;
+}
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+  background-color: #1d1326;
+  padding: 15px;
+}
+footer p {
+  color: #f2e3ce;
+}
