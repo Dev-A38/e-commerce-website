@@ -1,7 +1,16 @@
 /*Global css*/
 
 body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
   margin: 0;
+
+  /* Stick the footer to the bottom of the page */
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
 
 /* Global text styling */
@@ -11,8 +20,11 @@ a {
   text-decoration: none;
 }
 
-
 /* HEADER */
+
+header {
+  grid-area: header;
+}
 
 .navigation-bar {
   background-color: #1d1326;
@@ -20,13 +32,13 @@ a {
 
 .navigation-bar ul {
   margin: 0;
+  display: flex;
 }
 
 .navigation-bar a {
   color: #f2e3ce;
   margin-left: 2rem;
   padding: 1rem 2rem;
-  display: inline-block;
 }
 
 .navigation-bar a:hover {
@@ -35,13 +47,15 @@ a {
 
 /* MAIN */
 main {
+  grid-area: main;
   margin: 1rem;
 }
 
 /* FOOTER */
 footer {
+  grid-area: footer;
   background-color: #1d1326;
-  padding: 15px;
+  padding: 2vh 2vh 2vh 2vh;
 }
 
 footer p {
