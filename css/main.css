@@ -28,21 +28,35 @@ header {
 
 .navigation-bar {
   background-color: #1d1326;
+  padding: 4px 1px 4px 1px;
 }
 
 .navigation-bar ul {
-  margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  padding-left: 1vw;
 }
 
 .navigation-bar a {
+  /* Makes the border around the buttons */
   color: #f2e3ce;
-  margin-left: 2rem;
   padding: 1rem 2rem;
 }
 
 .navigation-bar a:hover {
   background-color: #000000;
+}
+
+#cart {
+  /* make the cart move to the right */
+  margin-left: auto;
+  margin-right: 1vw;
+  border-radius: 100px;
+  background-color: rgb(246, 173, 3);
+}
+
+#cart:hover {
+  background-color: rgb(255, 179, 0);
 }
 
 /* MAIN */
