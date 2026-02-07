@@ -1,47 +1,145 @@
 /*Global css*/
 
 body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
   margin: 0;
+
+  /* Stick the footer to the bottom of the page */
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+/* Fonts */
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Global text styling */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo One", sans-serif;
+}
+p {
+  font-family: "Kanit", sans-serif;
+}
 a {
   list-style: none;
   text-decoration: none;
 }
 
+/* ----HEADER---- */
 
-/* HEADER */
+header {
+  grid-area: header;
+}
 
 .navigation-bar {
-  background-color: #1d1326;
+  background-color: #121212;
+  padding: 4px 2.0625vw 4px 5vw;
+  margin-bottom: 1vh;
 }
 
 .navigation-bar ul {
-  margin: 0;
+  display: flex;
+  padding-left: 1vw;
 }
 
 .navigation-bar a {
+  /* Makes the border around the buttons */
   color: #f2e3ce;
-  margin-left: 2rem;
   padding: 1rem 2rem;
-  display: inline-block;
 }
 
 .navigation-bar a:hover {
   background-color: #000000;
 }
 
-/* MAIN */
-main {
-  margin: 1rem;
+#cart {
+  /* make the cart move to the right */
+  margin-left: auto;
+  margin-right: 1vw;
+  border-radius: 100px;
+  background-color: #f05a28;
+  transition: 1s;
 }
 
-/* FOOTER */
+#cart:hover {
+  transition: 1s;
+  background-color: #cd5730;
+}
+
+/* ----MAIN----- */
+main {
+  grid-area: main;
+  margin: 0 1vw 0 1vw;
+}
+
+/* MAIN Product */
+.product-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 3vh;
+  column-gap: 1.25vw;
+  margin: 0 3vw 1vh 3vw;
+}
+.product {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(4, auto);
+  border-radius: 20px; border: 1px solid #121212;
+}
+
+/* MAIN Product Container */
+
+.product-image {
+  justify-self: center;
+  margin: 1.5vh 0 1vh 0;
+}
+
+.product-name {
+  margin: 0 0 0 0;
+}
+.product-publisher {
+  margin: 0 0 0 0;
+}
+.product-price {
+  margin: 2vh 0 1vh 0;
+}
+
+/* ----FOOTER---- */
 footer {
-  background-color: #1d1326;
-  padding: 15px;
+  grid-area: footer;
+  background-color: #121212;
+  padding: 2vh 2vh 2vh 2vh;
 }
 
 footer p {
