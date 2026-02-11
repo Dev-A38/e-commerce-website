@@ -23,6 +23,7 @@ a {
 /* ----HEADER---- */
 
 header {
+  grid-row: 2;
   grid-area: header;
   position: sticky;
   top: 0;
@@ -30,6 +31,7 @@ header {
 }
 
 .navigation-bar {
+  display: grid;
   background-color: #121212;
   padding: 4px 2.06vw 4px 5vw;
 }
@@ -47,6 +49,30 @@ header {
 
 .navigation-bar a:hover {
   background-color: #000000;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+#search {
+  width: 100%;
+  padding-left: 1.2rem;
+  margin: 2vh 1vw 2vh 1vw;
+  height: 2.5rem;
+  border-radius: 100px;
+}
+
+#search-button {
+  background-color: #f05a28;
+  border: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 #cart {
