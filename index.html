@@ -14,19 +14,24 @@
           <a href="products.html"><li>Products</li></a>
           <a id="cart" href="cart.html"><li>C</li></a>
         </ul>
+        <!-- The following 9 line of code was adapted from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/search Accessed: 2026-01-01 -->
         <search class="search-bar-container">
-        <!-- The following 1 line of code was adapted from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/search Accessed: 2026-01-01 -->
-        <input
-          type="search"
-          placeholder="Search for boardgames"
-          name="search-bar"
-          id="search"
-        />
-        <button id="search-button">0</button>
+          <input
+            type="search"
+            placeholder="Search for boardgames"
+            name="search-bar"
+            id="search"
+          />
+          <button id="search-button">Search</button>
         </search>
       </nav>
     </header>
     <main>
+      <img
+        class="hero-image"
+        src="img/hero-placeholder.png"
+        alt="hero advertisment"
+      />
       <h2>Newly Added:</h2>
       <div class="product-grid">
         <a href="product.html"
@@ -165,14 +170,10 @@
         </div>
         <div class="footer-container">
           <h2 class="footer-title">Contact:</h2>
-          <ul class="footer-list">
-            <li>
-              <p>Phone: 0118-999-881-999-119-725-3</p>
-            </li>
-            <li>
-              <p>store@universeend.com</p>
-            </li>
-          </ul>
+          <address>
+            <p>Phone: 0118-999-881-999-119-725-3</p>
+            <p>Email: store@universeend.com</p>
+          </address>
         </div>
       </div>
       <p>&copy; The store at the end of the Universe</p>
