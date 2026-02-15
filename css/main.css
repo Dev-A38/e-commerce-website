@@ -66,6 +66,10 @@ header {
   border-radius: 100px;
 }
 
+#search:focus {
+  outline: 2px solid #f05a28;
+}
+
 #search-button {
   grid-area: 1/1;
   color: #f2e3ce;
