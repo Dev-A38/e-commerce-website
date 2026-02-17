@@ -121,7 +121,6 @@ main h2 {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(275px, 290px));
-  grid-template-rows: repeat(2, 1fr);
   row-gap: 3vh;
   column-gap: 1.25vw;
   margin: 0 3vw 3vh 3vw;
@@ -146,14 +145,15 @@ main h2 {
 .favorite-icon {
   grid-area: 1/1;
   z-index: 3;
-  width: 14%;
+  width: 15%;
   justify-self: end;
-  margin: 2%;
+  margin-top: 1.5vh;
 }
 
 .product-image {
   grid-area: 1/1;
   justify-self: center;
+  width: 100%;
   margin: 1.5vh 0 1vh 0;
 }
 
@@ -165,6 +165,7 @@ main h2 {
 }
 .product-price {
   margin: 2vh 0 2vh 0.5vw;
+  font-size: large;
 }
 
 /* ----FOOTER---- */
@@ -209,4 +210,20 @@ address p {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIUM */
+@media screen and (max-width: 1288px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* PHONE */
+@media screen and (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

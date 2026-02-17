@@ -3,11 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cart</title>
+    <!-- The following 1 lines of code was adapted from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#adding_custom_icons_to_your_site Accessed: 2026-02-14 -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
   </head>
   <body>
-    <header></header>
-    <main><h1>Welcome to the Cart</h1></main>
-    <footer></footer>
+    <header>
+      <nav class="navigation-bar">
+        <ul>
+          <a href="index.html"><li>Logo</li></a>
+          <a href="products.html"><li>Products</li></a>
+          <a id="cart" href="cart.html"><li>C</li></a>
+        </ul>
+        <!-- The following 9 line of code was adapted from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/search Accessed: 2026-02-13 -->
+        <search class="search-bar-container">
+          <input
+            type="search"
+            placeholder="Search for boardgames"
+            name="search-bar"
+            id="search"
+          />
+          <button id="search-button">Search</button>
+        </search>
+      </nav>
+    </header>
+    <main>
+      <div class="cart-page-header-conatiner">
+        <h1>Cart</h1>
+        <p>Price</p>
+      </div>
+      <div class="cart-page-container">
+        <article class="cart-page-product">
+          <div class="cart-page-information-conatiner">
+            <img
+              class="cart-product-image"
+              src="img/Placeholder.png"
+              alt="product image"
+            />
+            <div class="cart-page-name-amount-container">
+              <h2 class="cart-product-name">Board Game Name</h2>
+              <p class="cart-page-amount">Amount: 1</p>
+            </div>
+            <p class="cart-product-price">700kr</p>
+          </div>
+        </article>
+        <article class="cart-page-product">
+          <div class="cart-page-information-conatiner">
+            <img
+              class="cart-product-image"
+              src="img/Placeholder.png"
+              alt="product image"
+            />
+            <div class="cart-page-name-amount-container">
+              <h2 class="cart-product-name">Board Game Name</h2>
+              <p class="cart-page-amount">Amount: 1</p>
+            </div>
+            <p class="cart-product-price">700kr</p>
+          </div>
+        </article>
+        <article class="cart-page-product">
+          <div class="cart-page-information-conatiner">
+            <img
+              class="cart-product-image"
+              src="img/Placeholder.png"
+              alt="product image"
+            />
+            <div class="cart-page-name-amount-container">
+              <h2 class="cart-product-name">Board Game Name</h2>
+              <p class="cart-page-amount">Amount: 1</p>
+            </div>
+            <p class="cart-product-price">700kr</p>
+          </div>
+        </article>
+        <article class="cart-page-product">
+          <div class="cart-page-information-conatiner">
+            <img
+              class="cart-product-image"
+              src="img/Placeholder.png"
+              alt="product image"
+            />
+            <div class="cart-page-name-amount-container">
+              <h2 class="cart-product-name">Board Game Name</h2>
+              <p class="cart-page-amount">Amount: 1</p>
+            </div>
+            <p class="cart-product-price">700kr</p>
+          </div>
+        </article>
+        <article class="cart-page-product">
+          <div class="cart-page-information-conatiner">
+            <img
+              class="cart-product-image"
+              src="img/Placeholder.png"
+              alt="product image"
+            />
+            <div class="cart-page-name-amount-container">
+              <h2 class="cart-product-name">Board Game Name</h2>
+              <p class="cart-page-amount">Amount: 1</p>
+            </div>
+            <p class="cart-product-price">700kr</p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-container">
+          <h2 class="footer-title">Opening hours:</h2>
+          <ol class="footer-list">
+            <li>
+              <p>Mon: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Tue: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Wed: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Thu: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Fri: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Sat: Opening hours: 11:00-20:00</p>
+            </li>
+            <li>
+              <p>Sun: Opening hours: 11:00-20:00</p>
+            </li>
+          </ol>
+        </div>
+        <div class="footer-container">
+          <h2 class="footer-title">Contact:</h2>
+          <address>
+            <p>Phone: 0118-999-881-999-119-725-3</p>
+            <p>Email: store@universeend.com</p>
+          </address>
+        </div>
+      </div>
+      <p>&copy; The store at the end of the Universe</p>
+    </footer>
   </body>
 </html>
