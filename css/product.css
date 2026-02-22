@@ -30,7 +30,7 @@
   font-weight: bold;
 }
 
-.product-page-button {
+#product-page-add-to-cart-button {
   font-size: 1.5rem;
   justify-self: center;
   margin: 0 0 2vh 0;
