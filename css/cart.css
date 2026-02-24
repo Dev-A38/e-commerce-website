@@ -15,7 +15,7 @@ main {
   font-weight: bold;
 }
 
-.cart-page-container {
+#cart-page-container {
   display: grid;
   grid-template-rows: auto;
   row-gap: 1.5vh;
@@ -66,12 +66,12 @@ main {
 }
 
 .cart-buy-button {
-  margin: 2vh 0 2vh auto;
+  
+  margin: 2vh auto 2vh 0;
   font-size: larger;
 }
 
 #cart-total-price {
-  justify-self: end;
   font-size: larger;
   font-weight: bolder;
 }

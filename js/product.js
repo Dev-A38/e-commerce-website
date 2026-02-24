@@ -10,6 +10,7 @@ function saveCart() {
   let cartItem = {
     id: this.dataset.id,
     price: this.dataset.price,
+    amount: this.dataset.amount,
     publisher: this.dataset.publisher,
     img: this.dataset.img,
   };

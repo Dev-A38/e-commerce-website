@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <!-- The following 1 lines of code was adapted from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata#adding_custom_icons_to_your_site Accessed: 2026-02-14 -->
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cart.css" />
@@ -35,7 +34,7 @@
         <h1>Cart</h1>
         <p>Price</p>
       </div>
-      <div class="cart-page-container">
+      <div id="cart-page-container">
         <article class="cart-page-product">
           <div class="cart-page-information-conatiner">
             <img
@@ -54,8 +53,10 @@
             <p class="cart-product-price">700kr</p>
           </div>
         </article>
-        <p id="cart-total-price">TOTAL: 700kr</p>
+      </div>
+      <div class="cart-page-header-conatiner">
         <button class="cart-buy-button">BUY NOW</button>
+        <p id="cart-total-price">TOTAL: 700kr</p>
       </div>
     </main>
     <footer>
