@@ -20,12 +20,12 @@
   margin: 1.5vh 0 1.5vh 0;
 }
 
-.product-page-header {
+#product-page-header {
   font-weight: bold;
   margin: 0;
 }
 
-.product-page-price {
+#product-page-price {
   font-size: 1.5rem;
   font-weight: bold;
 }

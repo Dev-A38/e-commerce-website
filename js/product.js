@@ -1,18 +1,29 @@
+//Element path
 let productPageAddToCartButton = document.getElementById(
   "product-page-add-to-cart-button",
 );
+let elementProductPageHeader = document.getElementById("product-page-header");
+let elementProductPagePrice = document.getElementById("product-page-price");
+
+let productFocus = JSON.parse(localStorage.globalProductFocus);
 
 let cart = [];
+
+//update graphics
+if (localStorage.globalProductFocus) {
+  elementProductPageHeader.innerHTML = productFocus.id;
+  elementProductPagePrice.innerHTML = productFocus.price + "kr";
+}
 
 productPageAddToCartButton.addEventListener("click", saveCart);
 
 function saveCart() {
   let cartItem = {
-    id: this.dataset.id,
-    price: this.dataset.price,
-    amount: this.dataset.amount,
-    publisher: this.dataset.publisher,
-    img: this.dataset.img,
+    id: productFocus.id,
+    price: productFocus.price,
+    amount: productFocus.amount,
+    publisher: productFocus.publisher,
+    img: productFocus.img,
   };
   cart.push(cartItem);
 
