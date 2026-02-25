@@ -7,7 +7,14 @@ let elementProductPagePrice = document.getElementById("product-page-price");
 
 let productFocus = JSON.parse(localStorage.globalProductFocus);
 
-let cart = [];
+let cart;
+
+//If globalcart exist dont make a new one.
+if (localStorage.globalCart) {
+  cart = JSON.parse(localStorage.globalCart);
+} else {
+  cart = [];
+}
 
 //update graphics
 if (localStorage.globalProductFocus) {
