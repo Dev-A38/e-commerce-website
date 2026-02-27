@@ -4,10 +4,13 @@ let productPageAddToCartButton = document.getElementById(
 );
 let elementProductPageHeader = document.getElementById("product-page-header");
 let elementProductPagePrice = document.getElementById("product-page-price");
+let elementProductPagePublisher = document.getElementById(
+  "product-page-publisher",
+);
 
 let productFocus = JSON.parse(localStorage.globalProductFocus);
 
-let cart;
+let cart = [];
 
 //If globalcart exist dont make a new one.
 if (localStorage.globalCart) {
@@ -19,6 +22,7 @@ if (localStorage.globalCart) {
 //update graphics
 if (localStorage.globalProductFocus) {
   elementProductPageHeader.innerHTML = productFocus.id;
+  elementProductPagePublisher.innerHTML = productFocus.publisher;
   elementProductPagePrice.innerHTML = productFocus.price + "kr";
 }
 
@@ -32,6 +36,17 @@ function saveCart() {
     publisher: productFocus.publisher,
     img: productFocus.img,
   };
+
+  //If the item already exist remove it
+  for (let i = 0; i < cart.length; i++) {
+    if (productFocus.id === cart[i].id) {
+      cart.splice(i, 1);
+    }
+  }
+
+  console.log(cart.length);
+  console.log(cart);
+
   cart.push(cartItem);
 
   // The globalCart is the one that can gets stored in localstorage and can be accessed by all pages

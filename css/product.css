@@ -25,6 +25,11 @@
   margin: 0;
 }
 
+#product-page-publisher {
+  font-weight: bold;
+  font-size: large;
+}
+
 #product-page-price {
   font-size: 1.5rem;
   font-weight: bold;
