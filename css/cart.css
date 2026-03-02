@@ -49,6 +49,12 @@ main {
 
 .cart-product-negative-button {
   text-align: center;
+  cursor: pointer;
+  color: #f2e3ce;
+  background-color: #f05a28;
+  border: 0;
+  padding: 0.2vh 0.4vw;
+  border-radius: 3px;
 }
 
 .cart-product-amount {
@@ -58,6 +64,11 @@ main {
 
 .cart-product-posetive-button {
   text-align: center;
+  cursor: pointer;
+  color: #f2e3ce;
+  background-color: #f05a28;
+  border: 0;
+  border-radius: 3px;
 }
 
 .cart-product-price {
@@ -66,9 +77,14 @@ main {
 }
 
 .cart-buy-button {
-  
-  margin: 2vh auto 2vh 0;
-  font-size: larger;
+  margin: 4vh auto 2vh 0;
+  padding: 1vh 1vw;
+  font-size: 2rem;
+  color: #f2e3ce;
+  background-color: #f05a28;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #cart-total-price {

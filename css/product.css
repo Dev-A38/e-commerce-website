@@ -40,6 +40,11 @@
   justify-self: center;
   margin: 0 0 2vh 0;
   padding: 1rem;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  color: #f2e3ce;
+  background-color: #f05a28;
 }
 
 .product-page-description {
@@ -56,8 +61,8 @@
   }
 }
 
-/* PHONE */
-@media screen and (max-width: 800px) {
+/* SMALL */
+@media screen and (max-width: 801px) {
   .product-page-information-container {
     grid-template-columns: 1fr;
   }

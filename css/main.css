@@ -107,13 +107,14 @@ main {
   grid-area: main;
 }
 
-main h2 {
-  margin: 5vh 1vw 2vh 1vw;
-}
-
 /* MAIN hero */
 .hero-image {
   width: 100%;
+}
+
+.header-product-grid {
+  display: grid;
+  margin: 0 3vw 3vh 3vw;
 }
 
 /* MAIN Product */
@@ -123,7 +124,7 @@ main h2 {
   grid-template-columns: repeat(auto-fit, minmax(275px, 290px));
   row-gap: 3vh;
   column-gap: 1.25vw;
-  margin: 0 3vw 3vh 3vw;
+  margin-bottom: 1vh;
 }
 .product {
   display: grid;

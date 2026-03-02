@@ -1,7 +1,7 @@
 //Element paths
 let productsElement = document.getElementsByClassName("product");
 
-let productFocus;
+let productChosen;
 
 for (let i = 0; i < productsElement.length; i++) {
   productsElement[i].addEventListener("click", saveProductFocus);
@@ -16,8 +16,8 @@ function saveProductFocus() {
     img: this.dataset.img,
   };
 
-  productFocus = productFocusItem;
+  productChosen = productFocusItem;
 
   // The global product focus is the one that can gets stored in localstorage and can be accessed by all pages
-  localStorage.globalProductFocus = JSON.stringify(productFocus);
+  localStorage.globalProductFocus = JSON.stringify(productChosen);
 }

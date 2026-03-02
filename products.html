@@ -6,6 +6,7 @@
     <title>Products</title>
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,112 +29,170 @@
       </nav>
     </header>
     <main>
-      <h1>All PRODUCTS:</h1>
-      <div class="product-grid">
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
-        <a href="product.html"
-          ><article class="product">
-            <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
-            <img
-              class="product-image"
-              src="img/Placeholder.png"
-              alt="image placeholder"
-            />
-            <h3 class="product-name">Board game name</h3>
-            <p class="product-publisher">Publisher</p>
-            <p class="product-price">300 kr</p>
-          </article></a
-        >
+      <div class="header-product-grid">
+        <h1>Board Games:</h1>
+        <div class="product-grid">
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="CATAN"
+              data-price="320"
+              data-amount="1"
+              data-publisher="Kosmos"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">CATAN</h3>
+              <p class="product-publisher">Kosmos</p>
+              <p class="product-price">320 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Wingspan"
+              data-price="600"
+              data-amount="1"
+              data-publisher="Stonemaier Games"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Wingspan</h3>
+              <p class="product-publisher">Stonemaier Games</p>
+              <p class="product-price">600 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Patchwork"
+              data-price="250"
+              data-amount="1"
+              data-publisher="Lookout Games"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Patchwork</h3>
+              <p class="product-publisher">Lookout Games</p>
+              <p class="product-price">250 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="7 Wonders"
+              data-price="350"
+              data-amount="1"
+              data-publisher="Repos Production"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">7 Wonders</h3>
+              <p class="product-publisher">Repos Production</p>
+              <p class="product-price">350 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Carcassonne"
+              data-price="250"
+              data-amount="1"
+              data-publisher="Hans im Glück"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Carcassonne</h3>
+              <p class="product-publisher">Hans im Glück</p>
+              <p class="product-price">250 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Kingdomino"
+              data-price="200"
+              data-amount="1"
+              data-publisher="Blue Orange Games"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Kingdomino</h3>
+              <p class="product-publisher">Blue Orange Games</p>
+              <p class="product-price">200 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Bohnanza"
+              data-price="199"
+              data-amount="1"
+              data-publisher="Amigo"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Bohnanza</h3>
+              <p class="product-publisher">Amigo</p>
+              <p class="product-price">199 kr</p>
+            </article></a
+          >
+          <a href="product.html"
+            ><article
+              class="product"
+              data-id="Modern Art"
+              data-price="398"
+              data-amount="1"
+              data-publisher="CMON"
+              data-img="img/Placeholder.png"
+            >
+              <img class="favorite-icon" src="img/Heart.png" alt="heart icon" />
+              <img
+                class="product-image"
+                src="img/Placeholder.png"
+                alt="image placeholder"
+              />
+              <h3 class="product-name">Modern Art</h3>
+              <p class="product-publisher">CMON</p>
+              <p class="product-price">398 kr</p>
+            </article></a
+          >
+        </div>
       </div>
     </main>
     <footer>
