@@ -3,6 +3,7 @@ let productPageAddToCartButton = document.getElementById(
   "product-page-add-to-cart-button",
 );
 let elementProductPageHeader = document.getElementById("product-page-header");
+let productPageImage = document.getElementById("product-page-image");
 let elementProductPagePrice = document.getElementById("product-page-price");
 let elementProductPagePublisher = document.getElementById(
   "product-page-publisher",
@@ -22,6 +23,7 @@ if (localStorage.globalCart) {
 //update graphics
 if (localStorage.globalProductFocus) {
   elementProductPageHeader.innerHTML = productFocus.id;
+  productPageImage.src = productFocus.img;
   elementProductPagePublisher.innerHTML = productFocus.publisher;
   elementProductPagePrice.innerHTML = productFocus.price + "kr";
 }

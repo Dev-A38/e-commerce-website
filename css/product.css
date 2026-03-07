@@ -11,10 +11,8 @@
   grid-auto-rows: min-content;
   margin: 0 1vw 0 1vw;
 }
-.product-page-secound-information-container hr {
-  width: 100%;
-}
-.product-page-image {
+
+#product-page-image {
   width: 70%;
   justify-self: center;
   margin: 1.5vh 0 1.5vh 0;
@@ -23,6 +21,9 @@
 #product-page-header {
   font-weight: bold;
   margin: 0;
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding-bottom: 2vh;
 }
 
 #product-page-publisher {
@@ -31,8 +32,9 @@
 }
 
 #product-page-price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin: 3vh 0 3vh 0;
 }
 
 #product-page-add-to-cart-button {

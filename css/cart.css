@@ -53,13 +53,14 @@ main {
   color: #f2e3ce;
   background-color: #f05a28;
   border: 0;
+  width: 1rem;
   padding: 0.2vh 0.4vw;
   border-radius: 3px;
 }
 
 .cart-product-amount {
   text-align: center;
-  width: 2vw;
+  width: 1rem;
 }
 
 .cart-product-posetive-button {
@@ -68,6 +69,7 @@ main {
   color: #f2e3ce;
   background-color: #f05a28;
   border: 0;
+  width: 1rem;
   border-radius: 3px;
 }
 
@@ -94,7 +96,14 @@ main {
 
 /* MEDIA QUERIES */
 
-/* PHONE */
+/* MEDIUM */
+@media screen and (max-width: 1124px) {
+  main {
+    margin: 1vh 5vw 1vh 5vw;
+  }
+}
+
+/* SMALL */
 @media screen and (max-width: 800px) {
   .cart-product-name {
     margin: 0 19vw 0 0;
