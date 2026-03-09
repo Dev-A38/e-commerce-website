@@ -100,7 +100,6 @@ header {
   transition: 1s;
 }
 
-
 #cart {
   /* make the cart move to the right */
   margin-left: auto;
@@ -222,7 +221,7 @@ address p {
 /* MEDIA QUERIES */
 
 /* MEDIUM */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 813px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -235,7 +234,7 @@ address p {
 /* SMALL */
 @media screen and (max-width: 429px) {
   .header-product-grid {
-    margin: 7vw;
+    margin: 0 6vw;
   }
 
   .product-grid {
