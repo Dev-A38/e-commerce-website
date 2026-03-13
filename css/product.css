@@ -9,7 +9,7 @@
 .product-page-secound-information-container {
   display: grid;
   grid-auto-rows: min-content;
-  margin: 0 1vw 0 1vw;
+  margin: 0 1vw;
 }
 
 #product-page-image {
@@ -70,5 +70,9 @@
   }
   .product-page-product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-page-secound-information-container {
+    margin: 0 3vw 0 3vw;
   }
 }

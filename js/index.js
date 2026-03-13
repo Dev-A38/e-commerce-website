@@ -3,7 +3,6 @@ let productsElement = document.getElementsByClassName("product");
 
 let productChosen;
 
-
 for (let i = 0; i < productsElement.length; i++) {
   productsElement[i].addEventListener("click", saveProductFocus);
 }
